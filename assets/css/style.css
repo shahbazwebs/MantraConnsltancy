@@ -278,6 +278,47 @@ body.isMobileMenuOpend .mobileMenu {
   letter-spacing: 0%;
 }
 
+.heroSection.otherPageHeader .mainSliderSection .container .heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroSection.otherPageHeader .mainSliderSection .container .heroContainer h1 {
+  max-width: 100%;
+  text-align: center;
+}
+.heroSection.otherPageHeader .mainSliderSection .container .heroContainer p {
+  text-align: center;
+  max-width: 700px;
+}
+.heroSection.otherPageHeader .mainSliderSection .container .heroContainer h4 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77.45px;
+  letter-spacing: 0%;
+  color: #F1EEEA;
+  margin: 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .heroSection.otherPageHeader .mainSliderSection .container .heroContainer h4 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+.heroSection.otherPageHeader .mainSliderSection .container .heroContainer h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #58B736;
+  width: 40px;
+  height: 4px;
+  border-radius: 10px;
+}
+
 .contactUsSection {
   position: relative;
   background-color: #FFFFFF;
