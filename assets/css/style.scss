@@ -729,3 +729,183 @@ footer{
         font-size: 14px;
     }   
 }
+.blogOfMonth{
+    position: relative;
+    background-color: rgba(47, 172, 102, 0.1);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 60px 0;
+    .row{
+        @media(max-width: 767px){
+            flex-direction: column;
+        }
+    }
+    .blogOfMonthContents{
+        position: relative;
+        h2{
+            font-family: $interFonts;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+            margin-bottom: 40px;
+            @media(max-width: 767px){
+                font-size: 26px;
+            }
+        }
+        p{
+            font-family: $interFonts;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: 0%;
+            color: #000000;
+            @media(max-width: 767px){
+                font-size: 18px;
+            }
+        }
+    }
+    .blogImages{
+        position: relative;
+        transition: $transition;
+        &:hover{
+            .blogImagesOverlay{
+                transition: $transition;
+                opacity: 1;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        .blogImagesOverlay{
+            position: absolute;
+            opacity: 0;
+            transition: $transition;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.1);
+            background: linear-gradient(189deg, rgba(255,255,255,0.4452) 0%, rgba(0,0,0,0.4454) 100%);
+            width: 100%;
+            height: 40%;
+            border-radius: 0 0 60px 60px;
+            padding: 20px 40px;
+            z-index: 1;
+            h3{
+                font-size: 26px;
+                color: $whiteColor;
+                font-family: $interFonts;
+                @media(max-width: 767px){
+                    font-size: 22px;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: $whiteColor;
+                font-family: $interFonts;
+                margin: 0;
+                @media(max-width: 767px){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.monthSlider{
+    position: relative;
+    margin-top: 60px;
+    #container {
+    margin: 0;
+    padding: 0;
+    }
+
+    #slider-container {
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    }
+
+    #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 16px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid $themeColor;
+    border-top: 8px solid $themeColor;
+    padding: 0;
+    }
+
+    #slider-container .btn:hover {
+    transform: scale(1.2);
+    }
+
+    #slider-container .btn.inactive {
+    border-color: rgb(153, 121, 126)
+    }
+
+    #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+    }
+
+    #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+    }
+
+    #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+    }
+
+    #slider-container #slider .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+    }
+
+    #slider-container #slider .slide span {
+    img{
+        width: 100%;
+        border-radius: 40px;
+    }
+    }
+
+    @media only screen and (min-width: 1100px) {
+
+    #slider-container #slider .slide {
+        width: calc(2.5% - 20px);
+    }
+
+    }
+
+    @media only screen and (max-width: 1100px) {
+
+    #slider-container #slider .slide {
+        width: calc(3.3333333% - 20px);
+    }
+
+    }
+
+    @media only screen and (max-width: 900px) {
+
+    #slider-container #slider .slide {
+        width: calc(5% - 20px);
+    }
+
+    }
+
+    @media only screen and (max-width: 550px) {
+
+    #slider-container #slider .slide {
+        width: calc(10% - 20px);
+    }
+
+    }
+}
