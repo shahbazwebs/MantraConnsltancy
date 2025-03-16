@@ -905,4 +905,68 @@ footer .footerSocailMedia ul li a {
   }
 }
 
+.aboutContents {
+  position: relative;
+  background-color: #F1EEEA;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+.aboutContents h2 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+.aboutContents .aboutUsHeading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.aboutContents .aboutUsHeading.v_aboutWithLine::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 110%;
+  height: 1px;
+  bottom: 0;
+  background-color: #000000;
+}
+.aboutContents .aboutUsHeading h3 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.aboutContents .aboutUsHeading span {
+  position: absolute;
+  left: auto;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  z-index: 9;
+  background-color: #000000;
+  display: block;
+}
+.aboutContents .POVContainer {
+  position: relative;
+}
+.aboutContents .POVContainer p {
+  font-size: 14px;
+}
+.aboutContents .POVImages {
+  position: relative;
+}
+.aboutContents .POVImages img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
