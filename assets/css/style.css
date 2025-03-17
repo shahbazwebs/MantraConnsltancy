@@ -928,6 +928,14 @@ footer .footerSocailMedia ul li a {
   justify-content: center;
   height: 200px;
 }
+@media (max-width: 767px) {
+  .aboutContents .aboutUsHeading {
+    height: 150px;
+    border-radius: 10px;
+    border: solid 1px #000000;
+    margin-bottom: 20px;
+  }
+}
 .aboutContents .aboutUsHeading.v_aboutWithLine::before {
   content: "";
   position: absolute;
@@ -937,6 +945,11 @@ footer .footerSocailMedia ul li a {
   height: 1px;
   bottom: 0;
   background-color: #000000;
+}
+@media (max-width: 767px) {
+  .aboutContents .aboutUsHeading.v_aboutWithLine::before {
+    display: none;
+  }
 }
 .aboutContents .aboutUsHeading h3 {
   font-family: "Inter", serif;
@@ -955,6 +968,11 @@ footer .footerSocailMedia ul li a {
   z-index: 9;
   background-color: #000000;
   display: block;
+}
+@media (max-width: 767px) {
+  .aboutContents .aboutUsHeading span {
+    display: none;
+  }
 }
 .aboutContents .POVContainer {
   position: relative;

@@ -930,6 +930,12 @@ footer{
         align-items: center;
         justify-content: center;
         height: 200px;
+        @media(max-width: 767px){
+            height: 150px;
+            border-radius: 10px;
+            border: solid 1px #000000;
+            margin-bottom: 20px;
+        }
         &.v_aboutWithLine{
             &::before{
                 content: '';
@@ -940,6 +946,9 @@ footer{
                 height: 1px;
                 bottom: 0;
                 background-color: #000000;
+                @media(max-width: 767px){
+                    display: none;
+                }
             }
         }
         h3{
@@ -959,6 +968,9 @@ footer{
             z-index: 9;
             background-color: #000000;
             display: block;
+            @media(max-width: 767px){
+                display: none;
+            }
         }
     }
     .POVContainer{
@@ -973,5 +985,5 @@ footer{
             width: 100%;
         }
     }
-    
+
 }
