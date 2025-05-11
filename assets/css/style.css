@@ -280,10 +280,10 @@ body.isMobileMenuOpend .mobileMenu {
   margin: 0 auto;
   text-align: left;
   color: #969696;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Inter", serif;
   font-size: 16px;
-  line-height: 18.75px;
+  line-height: 22px;
   letter-spacing: 0%;
   text-align: center;
 }
